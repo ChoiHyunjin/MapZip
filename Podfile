@@ -6,6 +6,7 @@ target 'MapZip' do
   use_frameworks!
 
   # Pods for MapZip
+  pod 'Alamofire', '~> 5.5'
 
   target 'MapZipTests' do
     inherit! :search_paths

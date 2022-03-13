@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000A043C582A3855648CBAF8 /* Pods_MapZip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EEBCA04CD022AFEA9CA523 /* Pods_MapZip.framework */; };
+		04FB3954AC9953CA4C4427B6 /* Pods_MapZip_MapZipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975DCFF2E682048DFB04B555 /* Pods_MapZip_MapZipUITests.framework */; };
+		B9718826BAEC97810C304FE7 /* Pods_MapZipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84A6BBCDBB40854F6DE165D /* Pods_MapZipTests.framework */; };
+		CFC37AA727DA424C00E079E7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC37AA627DA424C00E079E7 /* Movie.swift */; };
 		CFC7A50027D793D900F110C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A4FF27D793D900F110C7 /* AppDelegate.swift */; };
 		CFC7A50227D793D900F110C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A50127D793D900F110C7 /* SceneDelegate.swift */; };
 		CFC7A50427D793D900F110C7 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A50327D793D900F110C7 /* MainTabBarViewController.swift */; };
@@ -21,8 +25,8 @@
 		CFC7A53527D79DD500F110C7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A53427D79DD500F110C7 /* MapViewController.swift */; };
 		CFC7A53C27D7A81C00F110C7 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A53B27D7A81C00F110C7 /* CollectionViewTableViewCell.swift */; };
 		CFC7A53E27D7B5F400F110C7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A53D27D7B5F400F110C7 /* HeaderView.swift */; };
-		CFC7A54027D8324300F110C7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CFC7A53F27D8324200F110C7 /* README.md */; };
 		CFC7A54227D8CB6A00F110C7 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A54127D8CB6A00F110C7 /* APICaller.swift */; };
+		CFD167FD27DE3E4C0094B8ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CFD167FC27DE3E4B0094B8ED /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16C098DD9F51481CEC4BDED2 /* Pods-MapZipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapZipTests.debug.xcconfig"; path = "Target Support Files/Pods-MapZipTests/Pods-MapZipTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1759BFD169BEDF15D36A0BD1 /* Pods-MapZipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapZipTests.release.xcconfig"; path = "Target Support Files/Pods-MapZipTests/Pods-MapZipTests.release.xcconfig"; sourceTree = "<group>"; };
+		2482192F69075ACFA5163260 /* Pods-MapZip-MapZipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapZip-MapZipUITests.debug.xcconfig"; path = "Target Support Files/Pods-MapZip-MapZipUITests/Pods-MapZip-MapZipUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B43767EBE0133B7B0A8C3DC /* Pods-MapZip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapZip.debug.xcconfig"; path = "Target Support Files/Pods-MapZip/Pods-MapZip.debug.xcconfig"; sourceTree = "<group>"; };
+		975DCFF2E682048DFB04B555 /* Pods_MapZip_MapZipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapZip_MapZipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B334942142C2EA2DE600F55C /* Pods-MapZip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapZip.release.xcconfig"; path = "Target Support Files/Pods-MapZip/Pods-MapZip.release.xcconfig"; sourceTree = "<group>"; };
+		CFC37AA627DA424C00E079E7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		CFC7A4FC27D793D900F110C7 /* MapZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC7A4FF27D793D900F110C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC7A50127D793D900F110C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +72,11 @@
 		CFC7A53427D79DD500F110C7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CFC7A53B27D7A81C00F110C7 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		CFC7A53D27D7B5F400F110C7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		CFC7A53F27D8324200F110C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CFC7A54127D8CB6A00F110C7 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		CFD167FC27DE3E4B0094B8ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D84A6BBCDBB40854F6DE165D /* Pods_MapZipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapZipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9058ED2333F2CAA1305B8FF /* Pods-MapZip-MapZipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapZip-MapZipUITests.release.xcconfig"; path = "Target Support Files/Pods-MapZip-MapZipUITests/Pods-MapZip-MapZipUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F7EEBCA04CD022AFEA9CA523 /* Pods_MapZip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapZip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000A043C582A3855648CBAF8 /* Pods_MapZip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9718826BAEC97810C304FE7 /* Pods_MapZipTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,20 +100,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FB3954AC9953CA4C4427B6 /* Pods_MapZip_MapZipUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22E10BBAB0DD9907AA1C66B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7EEBCA04CD022AFEA9CA523 /* Pods_MapZip.framework */,
+				975DCFF2E682048DFB04B555 /* Pods_MapZip_MapZipUITests.framework */,
+				D84A6BBCDBB40854F6DE165D /* Pods_MapZipTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CFC7A4F327D793D900F110C7 = {
 			isa = PBXGroup;
 			children = (
-				CFC7A53F27D8324200F110C7 /* README.md */,
+				CFD167FC27DE3E4B0094B8ED /* README.md */,
 				CFC7A4FE27D793D900F110C7 /* MapZip */,
 				CFC7A51527D793DD00F110C7 /* MapZipTests */,
 				CFC7A51F27D793DD00F110C7 /* MapZipUITests */,
 				CFC7A4FD27D793D900F110C7 /* Products */,
+				DF478462107095BE77FC8411 /* Pods */,
+				22E10BBAB0DD9907AA1C66B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,7 +156,6 @@
 				CFC7A50827D793DD00F110C7 /* Assets.xcassets */,
 				CFC7A50A27D793DD00F110C7 /* LaunchScreen.storyboard */,
 				CFC7A50D27D793DD00F110C7 /* Info.plist */,
-				CFC7A54127D8CB6A00F110C7 /* APICaller.swift */,
 			);
 			path = MapZip;
 			sourceTree = "<group>";
@@ -162,6 +190,7 @@
 		CFC7A53627D7A7B300F110C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CFC37AA627DA424C00E079E7 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,8 +221,22 @@
 		CFC7A53A27D7A7D400F110C7 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				CFC7A54127D8CB6A00F110C7 /* APICaller.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		DF478462107095BE77FC8411 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B43767EBE0133B7B0A8C3DC /* Pods-MapZip.debug.xcconfig */,
+				B334942142C2EA2DE600F55C /* Pods-MapZip.release.xcconfig */,
+				2482192F69075ACFA5163260 /* Pods-MapZip-MapZipUITests.debug.xcconfig */,
+				D9058ED2333F2CAA1305B8FF /* Pods-MapZip-MapZipUITests.release.xcconfig */,
+				16C098DD9F51481CEC4BDED2 /* Pods-MapZipTests.debug.xcconfig */,
+				1759BFD169BEDF15D36A0BD1 /* Pods-MapZipTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFC7A52627D793DD00F110C7 /* Build configuration list for PBXNativeTarget "MapZip" */;
 			buildPhases = (
+				6B878FD8F15C9AABABC467A9 /* [CP] Check Pods Manifest.lock */,
 				CFC7A4F827D793D900F110C7 /* Sources */,
 				CFC7A4F927D793D900F110C7 /* Frameworks */,
 				CFC7A4FA27D793D900F110C7 /* Resources */,
+				D7292F1FF02A37BC021E0098 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFC7A52927D793DD00F110C7 /* Build configuration list for PBXNativeTarget "MapZipTests" */;
 			buildPhases = (
+				9C7708F3B1D984C6954893A7 /* [CP] Check Pods Manifest.lock */,
 				CFC7A50E27D793DD00F110C7 /* Sources */,
 				CFC7A50F27D793DD00F110C7 /* Frameworks */,
 				CFC7A51027D793DD00F110C7 /* Resources */,
@@ -238,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFC7A52C27D793DD00F110C7 /* Build configuration list for PBXNativeTarget "MapZipUITests" */;
 			buildPhases = (
+				D95E13009D14EDF7D23CA2BA /* [CP] Check Pods Manifest.lock */,
 				CFC7A51827D793DD00F110C7 /* Sources */,
 				CFC7A51927D793DD00F110C7 /* Frameworks */,
 				CFC7A51A27D793DD00F110C7 /* Resources */,
+				418479E294A2D0144A251C4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,7 +350,7 @@
 			files = (
 				CFC7A50C27D793DD00F110C7 /* LaunchScreen.storyboard in Resources */,
 				CFC7A50927D793DD00F110C7 /* Assets.xcassets in Resources */,
-				CFC7A54027D8324300F110C7 /* README.md in Resources */,
+				CFD167FD27DE3E4C0094B8ED /* README.md in Resources */,
 				CFC7A50727D793D900F110C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +371,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		418479E294A2D0144A251C4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapZip-MapZipUITests/Pods-MapZip-MapZipUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapZip-MapZipUITests/Pods-MapZip-MapZipUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapZip-MapZipUITests/Pods-MapZip-MapZipUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B878FD8F15C9AABABC467A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapZip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C7708F3B1D984C6954893A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapZipTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7292F1FF02A37BC021E0098 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapZip/Pods-MapZip-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapZip/Pods-MapZip-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapZip/Pods-MapZip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D95E13009D14EDF7D23CA2BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapZip-MapZipUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CFC7A4F827D793D900F110C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -332,6 +483,7 @@
 				CFC7A53527D79DD500F110C7 /* MapViewController.swift in Sources */,
 				CFC7A50427D793D900F110C7 /* MainTabBarViewController.swift in Sources */,
 				CFC7A53C27D7A81C00F110C7 /* CollectionViewTableViewCell.swift in Sources */,
+				CFC37AA727DA424C00E079E7 /* Movie.swift in Sources */,
 				CFC7A54227D8CB6A00F110C7 /* APICaller.swift in Sources */,
 				CFC7A50027D793D900F110C7 /* AppDelegate.swift in Sources */,
 				CFC7A50227D793D900F110C7 /* SceneDelegate.swift in Sources */,
@@ -510,6 +662,7 @@
 		};
 		CFC7A52727D793DD00F110C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B43767EBE0133B7B0A8C3DC /* Pods-MapZip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -538,6 +691,7 @@
 		};
 		CFC7A52827D793DD00F110C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B334942142C2EA2DE600F55C /* Pods-MapZip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -566,6 +720,7 @@
 		};
 		CFC7A52A27D793DD00F110C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C098DD9F51481CEC4BDED2 /* Pods-MapZipTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -586,6 +741,7 @@
 		};
 		CFC7A52B27D793DD00F110C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1759BFD169BEDF15D36A0BD1 /* Pods-MapZipTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -606,6 +762,7 @@
 		};
 		CFC7A52D27D793DD00F110C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2482192F69075ACFA5163260 /* Pods-MapZip-MapZipUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -624,6 +781,7 @@
 		};
 		CFC7A52E27D793DD00F110C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9058ED2333F2CAA1305B8FF /* Pods-MapZip-MapZipUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

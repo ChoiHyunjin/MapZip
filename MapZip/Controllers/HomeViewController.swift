@@ -30,6 +30,8 @@ class HomeViewController: UIViewController {
         
         homeFeedTable.tableHeaderView = HeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 300))
         homeFeedTable.showsVerticalScrollIndicator = false
+        
+        getTrendingItems()
     }
     
 
@@ -49,6 +51,19 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .white
     }
 
+    func getTrendingItems(){
+        let caller = APICaller.shared
+        caller.getTrendingItems(completion: { response in
+            switch response.result {
+            case .success(let movies):
+                debugPrint("success:\(movies.results)")
+                break
+            case .failure(let error):
+                debugPrint("error:\(error)")
+                break
+            }
+        })
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
