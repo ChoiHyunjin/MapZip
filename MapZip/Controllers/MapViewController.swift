@@ -6,13 +6,16 @@
 //
 
 import UIKit
+import NMapsMap
 
 class MapViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .red
+        let mapView = MapView(frame: view.frame)
+        
+        view.addSubview(mapView)
     }
     
 
@@ -27,3 +30,7 @@ class MapViewController: UIViewController {
     */
 
 }
+
+//extension MapViewController : NMFMapViewTouchDelegate{
+//
+//}

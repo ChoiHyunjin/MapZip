@@ -10,6 +10,8 @@
 		000A043C582A3855648CBAF8 /* Pods_MapZip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EEBCA04CD022AFEA9CA523 /* Pods_MapZip.framework */; };
 		04FB3954AC9953CA4C4427B6 /* Pods_MapZip_MapZipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975DCFF2E682048DFB04B555 /* Pods_MapZip_MapZipUITests.framework */; };
 		B9718826BAEC97810C304FE7 /* Pods_MapZipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84A6BBCDBB40854F6DE165D /* Pods_MapZipTests.framework */; };
+		CF40F16527E6F86900AA3E32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40F16427E6F86900AA3E32 /* Extensions.swift */; };
+		CF40F16727E7022600AA3E32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40F16627E7022600AA3E32 /* Constants.swift */; };
 		CFC37AA727DA424C00E079E7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC37AA627DA424C00E079E7 /* Movie.swift */; };
 		CFC7A50027D793D900F110C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A4FF27D793D900F110C7 /* AppDelegate.swift */; };
 		CFC7A50227D793D900F110C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A50127D793D900F110C7 /* SceneDelegate.swift */; };
@@ -27,6 +29,8 @@
 		CFC7A53E27D7B5F400F110C7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A53D27D7B5F400F110C7 /* HeaderView.swift */; };
 		CFC7A54227D8CB6A00F110C7 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A54127D8CB6A00F110C7 /* APICaller.swift */; };
 		CFD167FD27DE3E4C0094B8ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CFD167FC27DE3E4B0094B8ED /* README.md */; };
+		CFF7695927E70CA00069B45D /* NMapAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF7695827E70CA00069B45D /* NMapAPICaller.swift */; };
+		CFF7695B27E71EDB0069B45D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF7695A27E71EDB0069B45D /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,8 @@
 		2B43767EBE0133B7B0A8C3DC /* Pods-MapZip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapZip.debug.xcconfig"; path = "Target Support Files/Pods-MapZip/Pods-MapZip.debug.xcconfig"; sourceTree = "<group>"; };
 		975DCFF2E682048DFB04B555 /* Pods_MapZip_MapZipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapZip_MapZipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B334942142C2EA2DE600F55C /* Pods-MapZip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapZip.release.xcconfig"; path = "Target Support Files/Pods-MapZip/Pods-MapZip.release.xcconfig"; sourceTree = "<group>"; };
+		CF40F16427E6F86900AA3E32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CF40F16627E7022600AA3E32 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CFC37AA627DA424C00E079E7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		CFC7A4FC27D793D900F110C7 /* MapZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC7A4FF27D793D900F110C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +80,8 @@
 		CFC7A53D27D7B5F400F110C7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		CFC7A54127D8CB6A00F110C7 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		CFD167FC27DE3E4B0094B8ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CFF7695827E70CA00069B45D /* NMapAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapAPICaller.swift; sourceTree = "<group>"; };
+		CFF7695A27E71EDB0069B45D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D84A6BBCDBB40854F6DE165D /* Pods_MapZipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapZipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9058ED2333F2CAA1305B8FF /* Pods-MapZip-MapZipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapZip-MapZipUITests.release.xcconfig"; path = "Target Support Files/Pods-MapZip-MapZipUITests/Pods-MapZip-MapZipUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F7EEBCA04CD022AFEA9CA523 /* Pods_MapZip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapZip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				CFC7A53D27D7B5F400F110C7 /* HeaderView.swift */,
+				CFF7695A27E71EDB0069B45D /* MapView.swift */,
 				CFC7A53B27D7A81C00F110C7 /* CollectionViewTableViewCell.swift */,
 			);
 			path = Views;
@@ -214,6 +223,8 @@
 		CFC7A53927D7A7CE00F110C7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CF40F16427E6F86900AA3E32 /* Extensions.swift */,
+				CF40F16627E7022600AA3E32 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -222,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				CFC7A54127D8CB6A00F110C7 /* APICaller.swift */,
+				CFF7695827E70CA00069B45D /* NMapAPICaller.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -486,9 +498,13 @@
 				CFC37AA727DA424C00E079E7 /* Movie.swift in Sources */,
 				CFC7A54227D8CB6A00F110C7 /* APICaller.swift in Sources */,
 				CFC7A50027D793D900F110C7 /* AppDelegate.swift in Sources */,
+				CFF7695B27E71EDB0069B45D /* MapView.swift in Sources */,
 				CFC7A50227D793D900F110C7 /* SceneDelegate.swift in Sources */,
+				CFF7695927E70CA00069B45D /* NMapAPICaller.swift in Sources */,
 				CFC7A53127D79A4D00F110C7 /* HomeViewController.swift in Sources */,
+				CF40F16527E6F86900AA3E32 /* Extensions.swift in Sources */,
 				CFC7A53E27D7B5F400F110C7 /* HeaderView.swift in Sources */,
+				CF40F16727E7022600AA3E32 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,7 +738,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16C098DD9F51481CEC4BDED2 /* Pods-MapZipTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -743,7 +758,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1759BFD169BEDF15D36A0BD1 /* Pods-MapZipTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -764,7 +778,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2482192F69075ACFA5163260 /* Pods-MapZip-MapZipUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F2ULJVBY3J;
@@ -783,7 +796,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9058ED2333F2CAA1305B8FF /* Pods-MapZip-MapZipUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F2ULJVBY3J;

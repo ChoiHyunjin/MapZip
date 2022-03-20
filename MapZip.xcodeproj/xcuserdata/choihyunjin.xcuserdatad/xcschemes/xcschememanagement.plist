@@ -7,7 +7,25 @@
 		<key>MapZip.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CFC7A4FB27D793D900F110C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFC7A51127D793DD00F110C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFC7A51B27D793DD00F110C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
