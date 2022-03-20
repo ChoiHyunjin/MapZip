@@ -43,13 +43,13 @@ class APICaller{
             .responseDecodable(of: Response<Trending>.self, completionHandler: completion)
     }
     
-    func getTrendingTV(completion : @escaping (AFDataResponse<Response<Trending>>) -> Void) {
+    func getTrendingTV(completion : @escaping (AFDataResponse<Response<TV>>) -> Void) {
         let url = "https://api.themoviedb.org/3/trending/tv/day"
         let params: Parameters = [
             "api_key": Constants.API_KEY
         ]
         AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default)
             .validate(statusCode: 200..<300)
-            .responseDecodable(of: Response<Trending>.self, completionHandler: completion)
+            .responseDecodable(of: Response<TV>.self, completionHandler: completion)
     }
 }

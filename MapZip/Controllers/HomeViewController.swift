@@ -32,6 +32,7 @@ class HomeViewController: UIViewController {
         homeFeedTable.showsVerticalScrollIndicator = false
         
         getTrendingItems()
+        getTVItems()
     }
     
 
@@ -64,11 +65,25 @@ class HomeViewController: UIViewController {
             }
         })
     }
+    
+    func getTVItems(){
+        let caller = APICaller.shared
+        caller.getTrendingTV(completion: { response in
+            switch response.result {
+            case .success(let tv):
+                debugPrint("success:\(tv.results)")
+                break
+            case .failure(let error):
+                debugPrint("error:\(error)")
+                break
+            }
+        })
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 20
+        return 10
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
