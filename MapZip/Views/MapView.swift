@@ -12,8 +12,7 @@ class MapView: NMFNaverMapView{
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        let marker = NMFMarker.init(position: NMGLatLng(lat: 14145127.7125430, lng: 4514239.3196558))
-        NMFMarker.init(position: NMGLatLng(lat: 4514239.3196558, lng: 14145127.7125430)).mapView = self.mapView
+        let marker = NMFMarker.init(position: NMGLatLng(lat: 37.5386422, lng: 127.0603975))
         marker.mapView = self.mapView
         setLocation()
         setMapView()

@@ -31,7 +31,7 @@ class HeaderView: UIView {
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         if let url = URL(string: iu) {
-            imageView.load(url: url)
+            imageView.sd_setImage(with: url, completed: .none)
         }
         return imageView
     }()
@@ -68,6 +68,7 @@ class HeaderView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        headerView.frame = self.bounds
     }
     
     required init?(coder: NSCoder) {

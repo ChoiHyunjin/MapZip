@@ -1,20 +1,26 @@
 PODS:
   - Alamofire (5.5.0)
   - NMapsMap (3.14.1)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
   - NMapsMap
+  - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - NMapsMap
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   NMapsMap: 79bae4e0d7cc5214dd6dabdb95687a1356616556
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
 
-PODFILE CHECKSUM: ee0c1c836b0e8970e4a3cb9569927841ac9ef92b
+PODFILE CHECKSUM: 322406efa2905947479347cd9f3aecd4cf17473f
 
 COCOAPODS: 1.11.3
