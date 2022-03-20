@@ -8,10 +8,6 @@
 import Foundation
 import Alamofire
 
-struct Constants {
-    let API_KEY = "f95d37bc2f3d04027de315de608e72e4"
-}
-
 enum APIError : Error {
     case failedToGetData
 }
@@ -30,7 +26,27 @@ class APICaller{
     func getTrendingItems(completion : @escaping (AFDataResponse<Response<Trending>>) -> Void) {
         let url = "https://api.themoviedb.org/3/trending/all/day"
         let params : Parameters = [
-            "api_key" : "f95d37bc2f3d04027de315de608e72e4"
+            "api_key" : Constants.API_KEY
+        ]
+        AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default)
+            .validate(statusCode: 200..<300)
+            .responseDecodable(of: Response<Trending>.self, completionHandler: completion)
+    }
+    
+    func getTrendingMovies(completion : @escaping (AFDataResponse<Response<Trending>>) -> Void) {
+        let url = "https://api.themoviedb.org/3/trending/movie/day"
+        let params : Parameters = [
+            "api_key" : Constants.API_KEY
+        ]
+        AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default)
+            .validate(statusCode: 200..<300)
+            .responseDecodable(of: Response<Trending>.self, completionHandler: completion)
+    }
+    
+    func getTrendingTV(completion : @escaping (AFDataResponse<Response<Trending>>) -> Void) {
+        let url = "https://api.themoviedb.org/3/trending/tv/day"
+        let params: Parameters = [
+            "api_key": Constants.API_KEY
         ]
         AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default)
             .validate(statusCode: 200..<300)
