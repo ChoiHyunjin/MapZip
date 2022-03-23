@@ -8,7 +8,7 @@ target 'MapZip' do
   # Pods for MapZip
   pod 'Alamofire', '~> 5.5'
   pod 'NMapsMap'
-  pod 'SDWebImage', '~> 5.0'
+  pod 'SDWebImage'
 
   target 'MapZipTests' do
     inherit! :search_paths

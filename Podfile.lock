@@ -8,7 +8,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.5)
   - NMapsMap
-  - SDWebImage (~> 5.0)
+  - SDWebImage
 
 SPEC REPOS:
   trunk:
@@ -23,4 +23,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 322406efa2905947479347cd9f3aecd4cf17473f
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.11.2
