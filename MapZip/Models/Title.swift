@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Trending : Codable {
+struct Title : Codable {
     let id: Int
     let vote_average: Double?
     let overview: String?

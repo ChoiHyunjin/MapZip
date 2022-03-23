@@ -23,24 +23,24 @@ struct Response<T: Codable> : Codable {
 class APICaller{
     static let shared = APICaller()
     
-    func getTrendingItems(completion : @escaping (AFDataResponse<Response<Trending>>) -> Void) {
+    func getTrendingItems(completion : @escaping (AFDataResponse<Response<Title>>) -> Void) {
         let url = "https://api.themoviedb.org/3/trending/all/day"
         let params : Parameters = [
             "api_key" : Constants.API_KEY
         ]
         AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default)
             .validate(statusCode: 200..<300)
-            .responseDecodable(of: Response<Trending>.self, completionHandler: completion)
+            .responseDecodable(of: Response<Title>.self, completionHandler: completion)
     }
     
-    func getTrendingMovies(completion : @escaping (AFDataResponse<Response<Trending>>) -> Void) {
+    func getTrendingMovies(completion : @escaping (AFDataResponse<Response<Title>>) -> Void) {
         let url = "https://api.themoviedb.org/3/trending/movie/day"
         let params : Parameters = [
             "api_key" : Constants.API_KEY
         ]
         AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default)
             .validate(statusCode: 200..<300)
-            .responseDecodable(of: Response<Trending>.self, completionHandler: completion)
+            .responseDecodable(of: Response<Title>.self, completionHandler: completion)
     }
     
     func getTrendingTV(completion : @escaping (AFDataResponse<Response<TV>>) -> Void) {
