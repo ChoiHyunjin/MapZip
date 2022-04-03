@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .dark
         view.addSubview(homeFeedTable)
         
         view.backgroundColor = .blue
@@ -49,7 +50,7 @@ class HomeViewController: UIViewController {
             UIBarButtonItem(image: UIImage(systemName: "person.fill"), style: .plain, target: self, action: nil),
             UIBarButtonItem(image: UIImage(systemName: "person"), style: .plain, target: self, action: nil),
         ]
-        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.alpha = 0.5
     }
 
     func getTrendingItems(){

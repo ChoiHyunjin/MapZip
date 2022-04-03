@@ -30,7 +30,7 @@ class HeaderView: UIView {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        if let url = URL(string: iu) {
+        if let url = URL(string: shortcut) {
             imageView.sd_setImage(with: url, completed: .none)
         }
         return imageView
@@ -40,7 +40,7 @@ class HeaderView: UIView {
         let gradient = CAGradientLayer()
         gradient.colors = [
             UIColor.clear.cgColor,
-            UIColor.white.cgColor,
+            UIColor.black.cgColor,
         ]
         gradient.frame = bounds
         layer.addSublayer(gradient)
