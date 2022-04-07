@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class CurationViewController: UIViewController {
     
     private let titles = ["Title1", "Title2", "Title3",]
     
@@ -43,14 +43,33 @@ class HomeViewController: UIViewController {
     }
     
     func configNavBar() {
-        var image = UIImage(systemName: "flame.fill")
-//        image = image?.withRenderingMode(.alwaysOriginal)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: nil)
-        navigationItem.rightBarButtonItems = [
-            UIBarButtonItem(image: UIImage(systemName: "person.fill"), style: .plain, target: self, action: nil),
-            UIBarButtonItem(image: UIImage(systemName: "person"), style: .plain, target: self, action: nil),
+        let navBar = UIView()
+        navBar.alpha = 0.5
+        let image = UIImageView(image: UIImage(systemName: "flame.fill"))
+        navBar.addSubview(image)
+        let detailImageContraints = [
+            image.widthAnchor.constraint(equalToConstant: 44),
+            image.heightAnchor.constraint(equalToConstant: 44),
+            image.leadingAnchor.constraint(equalTo: navBar.leadingAnchor),
         ]
-        navigationController?.navigationBar.alpha = 0.5
+        NSLayoutConstraint.activate(detailImageContraints)
+        
+        let person = UIImageView(image: UIImage(systemName: "person.fill"))
+        NSLayoutConstraint.activate([
+            person.widthAnchor.constraint(equalToConstant: 44),
+            person.heightAnchor.constraint(equalToConstant: 44),
+            person.trailingAnchor.constraint(equalTo: navBar.trailingAnchor),
+        ])
+        navBar.addSubview(person)
+        
+        navBar.alpha = 0.5
+        self.view.addSubview(navBar)
+        NSLayoutConstraint.activate([
+            navBar.topAnchor.constraint(equalTo: view.topAnchor),
+            navBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+        ])
+        
     }
 
     func getTrendingItems(){
@@ -82,7 +101,7 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
+extension CurationViewController: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 10
     }

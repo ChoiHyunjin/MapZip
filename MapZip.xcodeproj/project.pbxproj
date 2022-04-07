@@ -23,7 +23,7 @@
 		CFC7A51727D793DD00F110C7 /* MapZipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A51627D793DD00F110C7 /* MapZipTests.swift */; };
 		CFC7A52127D793DD00F110C7 /* MapZipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A52027D793DD00F110C7 /* MapZipUITests.swift */; };
 		CFC7A52327D793DD00F110C7 /* MapZipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A52227D793DD00F110C7 /* MapZipUITestsLaunchTests.swift */; };
-		CFC7A53127D79A4D00F110C7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A53027D79A4D00F110C7 /* HomeViewController.swift */; };
+		CFC7A53127D79A4D00F110C7 /* CurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A53027D79A4D00F110C7 /* CurationViewController.swift */; };
 		CFC7A53327D79DC400F110C7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A53227D79DC400F110C7 /* SearchViewController.swift */; };
 		CFC7A53527D79DD500F110C7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A53427D79DD500F110C7 /* MapViewController.swift */; };
 		CFC7A53C27D7A81C00F110C7 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A53B27D7A81C00F110C7 /* CollectionViewTableViewCell.swift */; };
@@ -75,7 +75,7 @@
 		CFC7A51C27D793DD00F110C7 /* MapZipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapZipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC7A52027D793DD00F110C7 /* MapZipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapZipUITests.swift; sourceTree = "<group>"; };
 		CFC7A52227D793DD00F110C7 /* MapZipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapZipUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CFC7A53027D79A4D00F110C7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CFC7A53027D79A4D00F110C7 /* CurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationViewController.swift; sourceTree = "<group>"; };
 		CFC7A53227D79DC400F110C7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CFC7A53427D79DD500F110C7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CFC7A53B27D7A81C00F110C7 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 		CFC7A52F27D79A3C00F110C7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CFC7A53027D79A4D00F110C7 /* HomeViewController.swift */,
+				CFC7A53027D79A4D00F110C7 /* CurationViewController.swift */,
 				CFC7A53427D79DD500F110C7 /* MapViewController.swift */,
 				CFC7A53227D79DC400F110C7 /* SearchViewController.swift */,
 			);
@@ -505,7 +505,7 @@
 				CFF7695B27E71EDB0069B45D /* MapView.swift in Sources */,
 				CFF7695D27E77D6F0069B45D /* TV.swift in Sources */,
 				CFC7A50227D793D900F110C7 /* SceneDelegate.swift in Sources */,
-				CFC7A53127D79A4D00F110C7 /* HomeViewController.swift in Sources */,
+				CFC7A53127D79A4D00F110C7 /* CurationViewController.swift in Sources */,
 				CF40F16527E6F86900AA3E32 /* Extensions.swift in Sources */,
 				CFC7A53E27D7B5F400F110C7 /* HeaderView.swift in Sources */,
 				CF40F16727E7022600AA3E32 /* Constants.swift in Sources */,
