@@ -16,6 +16,8 @@ class CurationViewController: UIViewController {
         table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
         return table
     }()
+    
+    private var navigationBar : UIView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +26,11 @@ class CurationViewController: UIViewController {
         
         view.backgroundColor = .blue
         
+        navigationController?.navigationBar.isHidden = true
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
         
-        configNavBar()
+//        configNavBar()
         
         homeFeedTable.tableHeaderView = HeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 300))
         homeFeedTable.showsVerticalScrollIndicator = false
@@ -51,6 +54,7 @@ class CurationViewController: UIViewController {
             image.widthAnchor.constraint(equalToConstant: 44),
             image.heightAnchor.constraint(equalToConstant: 44),
             image.leadingAnchor.constraint(equalTo: navBar.leadingAnchor),
+            image.topAnchor.constraint(equalTo: navBar.topAnchor)
         ]
         NSLayoutConstraint.activate(detailImageContraints)
         
@@ -59,17 +63,18 @@ class CurationViewController: UIViewController {
             person.widthAnchor.constraint(equalToConstant: 44),
             person.heightAnchor.constraint(equalToConstant: 44),
             person.trailingAnchor.constraint(equalTo: navBar.trailingAnchor),
+            person.topAnchor.constraint(equalTo: navBar.topAnchor)
         ])
         navBar.addSubview(person)
         
         navBar.alpha = 0.5
         self.view.addSubview(navBar)
         NSLayoutConstraint.activate([
-            navBar.topAnchor.constraint(equalTo: view.topAnchor),
-            navBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            navBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            navBar.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            navBar.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
         ])
-        
+        self.navigationBar = navBar
     }
 
     func getTrendingItems(){
@@ -140,7 +145,8 @@ extension CurationViewController: UITableViewDelegate, UITableViewDataSource{
         let defaultOffset = view.safeAreaInsets.top
         let y = scrollView.contentOffset.y + defaultOffset
         
-        navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0,-y))
+//        navigationBar?.transform = .init(translationX: 0, y: min(0,-y))
+//        navigationBar?.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: -min(0,-y)).isActive = true
     }
     
 }
