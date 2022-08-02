@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		000A043C582A3855648CBAF8 /* Pods_MapZip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EEBCA04CD022AFEA9CA523 /* Pods_MapZip.framework */; };
 		04FB3954AC9953CA4C4427B6 /* Pods_MapZip_MapZipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975DCFF2E682048DFB04B555 /* Pods_MapZip_MapZipUITests.framework */; };
 		B9718826BAEC97810C304FE7 /* Pods_MapZipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84A6BBCDBB40854F6DE165D /* Pods_MapZipTests.framework */; };
 		CF0D277B27E7800400C4E2FB /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D277A27E7800400C4E2FB /* TitleCollectionViewCell.swift */; };
@@ -32,6 +31,10 @@
 		CFD167FD27DE3E4C0094B8ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CFD167FC27DE3E4B0094B8ED /* README.md */; };
 		CFF7695B27E71EDB0069B45D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF7695A27E71EDB0069B45D /* MapView.swift */; };
 		CFF7695D27E77D6F0069B45D /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF7695C27E77D6F0069B45D /* TV.swift */; };
+		EC82CBB128982D9C00D4D211 /* Pods_MapZip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EEBCA04CD022AFEA9CA523 /* Pods_MapZip.framework */; };
+		EC82CBB62898381C00D4D211 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82CBB42898381C00D4D211 /* Location.swift */; };
+		EC82CBB72898381C00D4D211 /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82CBB52898381C00D4D211 /* Zone.swift */; };
+		EC82CBB92898384200D4D211 /* NMapAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82CBB82898384200D4D211 /* NMapAPICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		CFF7695C27E77D6F0069B45D /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
 		D84A6BBCDBB40854F6DE165D /* Pods_MapZipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapZipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9058ED2333F2CAA1305B8FF /* Pods-MapZip-MapZipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapZip-MapZipUITests.release.xcconfig"; path = "Target Support Files/Pods-MapZip-MapZipUITests/Pods-MapZip-MapZipUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EC82CBB42898381C00D4D211 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EC82CBB52898381C00D4D211 /* Zone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zone.swift; sourceTree = "<group>"; };
+		EC82CBB82898384200D4D211 /* NMapAPICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NMapAPICaller.swift; sourceTree = "<group>"; };
 		F7EEBCA04CD022AFEA9CA523 /* Pods_MapZip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapZip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000A043C582A3855648CBAF8 /* Pods_MapZip.framework in Frameworks */,
+				EC82CBB128982D9C00D4D211 /* Pods_MapZip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +162,6 @@
 				CFC7A53A27D7A7D400F110C7 /* Managers */,
 				CFC7A53927D7A7CE00F110C7 /* Resources */,
 				CFC7A53827D7A7C300F110C7 /* Views */,
-				CFC7A53727D7A7BD00F110C7 /* ViewModels */,
 				CFC7A53627D7A7B300F110C7 /* Models */,
 				CFC7A52F27D79A3C00F110C7 /* Controllers */,
 				CFC7A4FF27D793D900F110C7 /* AppDelegate.swift */,
@@ -200,17 +205,12 @@
 		CFC7A53627D7A7B300F110C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EC82CBB42898381C00D4D211 /* Location.swift */,
+				EC82CBB52898381C00D4D211 /* Zone.swift */,
 				CFC37AA627DA424C00E079E7 /* Title.swift */,
 				CFF7695C27E77D6F0069B45D /* TV.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		CFC7A53727D7A7BD00F110C7 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		CFC7A53827D7A7C300F110C7 /* Views */ = {
@@ -236,6 +236,7 @@
 		CFC7A53A27D7A7D400F110C7 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				EC82CBB82898384200D4D211 /* NMapAPICaller.swift */,
 				CFC7A54127D8CB6A00F110C7 /* APICaller.swift */,
 			);
 			path = Managers;
@@ -496,6 +497,9 @@
 			files = (
 				CFC7A53327D79DC400F110C7 /* SearchViewController.swift in Sources */,
 				CF0D277B27E7800400C4E2FB /* TitleCollectionViewCell.swift in Sources */,
+				EC82CBB62898381C00D4D211 /* Location.swift in Sources */,
+				EC82CBB92898384200D4D211 /* NMapAPICaller.swift in Sources */,
+				EC82CBB72898381C00D4D211 /* Zone.swift in Sources */,
 				CFC7A53527D79DD500F110C7 /* MapViewController.swift in Sources */,
 				CFC7A50427D793D900F110C7 /* MainTabBarViewController.swift in Sources */,
 				CFC7A53C27D7A81C00F110C7 /* CollectionViewTableViewCell.swift in Sources */,
@@ -673,6 +677,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -689,6 +694,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F2ULJVBY3J;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapZip/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -718,6 +724,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F2ULJVBY3J;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapZip/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
