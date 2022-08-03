@@ -13,7 +13,7 @@ class SearchViewController: UIViewController {
     
     let tableView: UITableView = {
         var tableView = UITableView()
-        tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: "SearchCell")
+//        tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: "SearchCell")
         
         return tableView
     }()
@@ -59,12 +59,13 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell", for: indexPath) as? SearchTableViewCell else { return UITableViewCell() }
-        
-//        cell.image = ""
-//        cell.reloadInputViews()
-        
-        return cell
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell", for: indexPath) as? SearchTableViewCell else { return UITableViewCell() }
+//
+////        cell.image = ""
+////        cell.reloadInputViews()
+//
+//        return cell
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
