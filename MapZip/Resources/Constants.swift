@@ -11,4 +11,7 @@ struct Constants {
     static let API_KEY = "f95d37bc2f3d04027de315de608e72e4"
     static let NMP_CLIENT_ID = "g0r6peh4tw"
     static let NMP_API_KEY = "ij6zJQfdfUMQfD9bc8PNaoWvtLnv3Q2sW79kSv47"
+    static let BASE_ADDRESS = "http://15.164.255.39:8080"
+    static let API_URL = "/api"
+    static let API_VERSION = "/v1"
 }

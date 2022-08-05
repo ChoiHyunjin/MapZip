@@ -14,11 +14,11 @@ enum APIError : Error {
 
 struct Response<T: Codable> : Codable {
     let page: Int
-    let results: [T]
+    let result: [T]
     let total_pages : Int
-    let total_results: Int
+    let total_result : Int
+    let error_message : String?
 }
-
 
 class APICaller{
     static let shared = APICaller()
@@ -51,5 +51,20 @@ class APICaller{
         AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default)
             .validate(statusCode: 200..<300)
             .responseDecodable(of: Response<TV>.self, completionHandler: completion)
+    }
+    
+    func getRestaurantsByCoordination(latitude: Double, longitude: Double, level: Int, completion : @escaping (AFDataResponse<Response<Restaurant>>) -> Void) {
+        let url = getApiAddress( "/restaurants?latitude=\(latitude)&longitude=\(longitude)&level=\(level)")
+        print("url:", url)
+        let params: Parameters = [
+            "api_key": Constants.API_KEY
+        ]
+        AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default)
+            .validate(statusCode: 200..<300)
+            .responseDecodable(of: Response<Restaurant>.self, completionHandler: completion)
+    }
+    
+    private func getApiAddress(_ url: String) -> String {
+        return Constants.BASE_ADDRESS + Constants.API_URL + Constants.API_VERSION + url
     }
 }

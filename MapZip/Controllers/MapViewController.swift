@@ -13,24 +13,18 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let mapView = MapView(frame: view.frame)
+        let mapView = MapView(frame: navigationController?.view.frame ?? .zero)
         
         view.addSubview(mapView)
+        self.getRestaurants()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func getRestaurants(){
+        let caller = APICaller.shared
+        
+        print("getRestaurants")
+        caller.getRestaurantsByCoordination(latitude: 37.4847149, longitude: 126.9308361, level: 3, completion: {response in
+            print(response)
+        })
     }
-    */
-
 }
-
-//extension MapViewController : NMFMapViewTouchDelegate{
-//
-//}
