@@ -7,6 +7,14 @@
 
 import UIKit
 
+enum Sections: Int {
+    case TrendingMovie = 0
+    case TrendingTV
+    case Popular
+    case Upcoming
+    case TopRated
+}
+
 class CurationViewController: UIViewController {
     
     private let titles = ["Title1", "Title2", "Title3",]
@@ -29,6 +37,7 @@ class CurationViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
+        homeFeedTable.separatorStyle = .none
         
 //        configNavBar()
         
@@ -78,31 +87,31 @@ class CurationViewController: UIViewController {
     }
 
     func getTrendingItems(){
-        let caller = APICaller.shared
-        caller.getTrendingItems(completion: { response in
-            switch response.result {
-            case .success(let movies):
-                debugPrint("success:\(movies.results)")
-                break
-            case .failure(let error):
-                debugPrint("error:\(error)")
-                break
-            }
-        })
+//        let caller = APICaller.shared
+//        caller.getTrendingItems(completion: { response in
+//            switch response.result {
+//            case .success(let movies):
+//                debugPrint("success:\(movies.results)")
+//                break
+//            case .failure(let error):
+//                debugPrint("error:\(error)")
+//                break
+//            }
+//        })
     }
     
     func getTVItems(){
-        let caller = APICaller.shared
-        caller.getTrendingTV(completion: { response in
-            switch response.result {
-            case .success(let tv):
-                debugPrint("success:\(tv.results)")
-                break
-            case .failure(let error):
-                debugPrint("error:\(error)")
-                break
-            }
-        })
+//        let caller = APICaller.shared
+//        caller.getTrendingTV(completion: { response in
+//            switch response.result {
+//            case .success(let tv):
+//                debugPrint("success:\(tv.results)")
+//                break
+//            case .failure(let error):
+//                debugPrint("error:\(error)")
+//                break
+//            }
+//        })
     }
 }
 

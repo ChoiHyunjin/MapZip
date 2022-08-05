@@ -113,13 +113,13 @@ class MapView: NMFNaverMapView{
         self.mapView.moveCamera(camera)
         guard let authStatus = self.getLocationAuthorize() else { return }
         switch authStatus {
-            case .authorizedAlways, .authorizedWhenInUse:
-                self.setCurrentLocation()
-                break
-            default:
-            self.moveTo(Zone(id: "", name: "", alias: "",
-                             location: Location(lat: 37.54330366639085, lng: 127.04455548501139)))
-                break
+        case .authorizedAlways, .authorizedWhenInUse:
+            self.setCurrentLocation()
+            break
+        default:
+        self.moveTo(Zone(id: "", name: "", alias: "",
+                         location: Location(lat: 37.54330366639085, lng: 127.04455548501139)))
+            break
             
         }
     }
