@@ -10,6 +10,9 @@
 		04FB3954AC9953CA4C4427B6 /* Pods_MapZip_MapZipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975DCFF2E682048DFB04B555 /* Pods_MapZip_MapZipUITests.framework */; };
 		B9718826BAEC97810C304FE7 /* Pods_MapZipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84A6BBCDBB40854F6DE165D /* Pods_MapZipTests.framework */; };
 		CF0D277B27E7800400C4E2FB /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D277A27E7800400C4E2FB /* TitleCollectionViewCell.swift */; };
+		CF188FD0289FC6CC009A4A83 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF188FCF289FC6CC009A4A83 /* Restaurant.swift */; };
+		CF188FD2289FC6D5009A4A83 /* Youtuber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF188FD1289FC6D5009A4A83 /* Youtuber.swift */; };
+		CF188FD4289FC6ED009A4A83 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF188FD3289FC6ED009A4A83 /* SearchTableViewCell.swift */; };
 		CF40F16527E6F86900AA3E32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40F16427E6F86900AA3E32 /* Extensions.swift */; };
 		CF40F16727E7022600AA3E32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40F16627E7022600AA3E32 /* Constants.swift */; };
 		CFC37AA727DA424C00E079E7 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC37AA627DA424C00E079E7 /* Title.swift */; };
@@ -62,6 +65,9 @@
 		975DCFF2E682048DFB04B555 /* Pods_MapZip_MapZipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapZip_MapZipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B334942142C2EA2DE600F55C /* Pods-MapZip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapZip.release.xcconfig"; path = "Target Support Files/Pods-MapZip/Pods-MapZip.release.xcconfig"; sourceTree = "<group>"; };
 		CF0D277A27E7800400C4E2FB /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF188FCF289FC6CC009A4A83 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		CF188FD1289FC6D5009A4A83 /* Youtuber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Youtuber.swift; sourceTree = "<group>"; };
+		CF188FD3289FC6ED009A4A83 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		CF40F16427E6F86900AA3E32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CF40F16627E7022600AA3E32 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CFC37AA627DA424C00E079E7 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
@@ -205,7 +211,9 @@
 		CFC7A53627D7A7B300F110C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CF188FD1289FC6D5009A4A83 /* Youtuber.swift */,
 				EC82CBB42898381C00D4D211 /* Location.swift */,
+				CF188FCF289FC6CC009A4A83 /* Restaurant.swift */,
 				EC82CBB52898381C00D4D211 /* Zone.swift */,
 				CFC37AA627DA424C00E079E7 /* Title.swift */,
 				CFF7695C27E77D6F0069B45D /* TV.swift */,
@@ -216,6 +224,7 @@
 		CFC7A53827D7A7C300F110C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CF188FD3289FC6ED009A4A83 /* SearchTableViewCell.swift */,
 				CFC7A53D27D7B5F400F110C7 /* HeaderView.swift */,
 				CFF7695A27E71EDB0069B45D /* MapView.swift */,
 				CFC7A53B27D7A81C00F110C7 /* CollectionViewTableViewCell.swift */,
@@ -499,7 +508,9 @@
 				CF0D277B27E7800400C4E2FB /* TitleCollectionViewCell.swift in Sources */,
 				EC82CBB62898381C00D4D211 /* Location.swift in Sources */,
 				EC82CBB92898384200D4D211 /* NMapAPICaller.swift in Sources */,
+				CF188FD2289FC6D5009A4A83 /* Youtuber.swift in Sources */,
 				EC82CBB72898381C00D4D211 /* Zone.swift in Sources */,
+				CF188FD4289FC6ED009A4A83 /* SearchTableViewCell.swift in Sources */,
 				CFC7A53527D79DD500F110C7 /* MapViewController.swift in Sources */,
 				CFC7A50427D793D900F110C7 /* MainTabBarViewController.swift in Sources */,
 				CFC7A53C27D7A81C00F110C7 /* CollectionViewTableViewCell.swift in Sources */,
@@ -509,6 +520,7 @@
 				CFF7695B27E71EDB0069B45D /* MapView.swift in Sources */,
 				CFF7695D27E77D6F0069B45D /* TV.swift in Sources */,
 				CFC7A50227D793D900F110C7 /* SceneDelegate.swift in Sources */,
+				CF188FD0289FC6CC009A4A83 /* Restaurant.swift in Sources */,
 				CFC7A53127D79A4D00F110C7 /* CurationViewController.swift in Sources */,
 				CF40F16527E6F86900AA3E32 /* Extensions.swift in Sources */,
 				CFC7A53E27D7B5F400F110C7 /* HeaderView.swift in Sources */,
