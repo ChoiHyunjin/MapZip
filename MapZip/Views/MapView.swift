@@ -17,6 +17,7 @@ class MapView: NMFNaverMapView{
     
     var markerDelegate: ZoneMarkerDelegate?
     var zones: [Zone]?
+    private var markers: [NMFMarker] = []
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -82,6 +83,15 @@ class MapView: NMFNaverMapView{
         let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: zone.location.lat, lng:  zone.location.lng))
         cameraUpdate.animation = animation
         self.mapView.moveCamera(cameraUpdate, completion: completion)
+    }
+    
+    func setRestaurants(restaurants: [Restaurant]){
+        self.markers = restaurants.map { restaurant in
+            let marker = NMFMarker.init(position: NMGLatLng(lat: restaurant.latitude, lng: restaurant.longitude))
+            marker.mapView = self.mapView
+            marker.captionText = restaurant.name
+            return marker
+        }
     }
     
     private func setCurrentLocation(by status: CLAuthorizationStatus){
