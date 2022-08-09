@@ -21,8 +21,6 @@ class MapView: NMFNaverMapView{
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        let marker = NMFMarker.init(position: NMGLatLng(lat: 37.5386422, lng: 127.0603975))
-        marker.mapView = self.mapView
         setLocation()
         setMapView()
         configureLocation()
@@ -87,9 +85,11 @@ class MapView: NMFNaverMapView{
     
     func setRestaurants(restaurants: [Restaurant]){
         self.markers = restaurants.map { restaurant in
-            let marker = NMFMarker.init(position: NMGLatLng(lat: restaurant.latitude, lng: restaurant.longitude))
+            let marker = NMFMarker(position: NMGLatLng(lat: restaurant.latitude, lng: restaurant.longitude))
             marker.mapView = self.mapView
             marker.captionText = restaurant.name
+            marker.height = 30
+            marker.width = marker.height / 4 * 3
             return marker
         }
     }
